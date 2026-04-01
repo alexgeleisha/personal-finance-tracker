@@ -12,3 +12,5 @@ save(transactions)
 if __name__ == "__main__":
     add_transaction("Coffee", -5)
     print(get_balance())
+def get_expenses():
+    return [t for t in transactions if t["amount"] < 0]
