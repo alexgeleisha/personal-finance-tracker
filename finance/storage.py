@@ -23,3 +23,8 @@ from finance.tracker import add_transaction, get_balance
 def test_balance():
     add_transaction("Test", 10)
     assert get_balance() >= 10
+from finance.categories import add_category
+
+def test_category():
+    add_category("test")
+    assert "test" in ["test"]
