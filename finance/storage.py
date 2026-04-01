@@ -8,3 +8,4 @@ def load(filename="data.json"):
             return json.load(f)
     except:
         return []
+save(transactions)
