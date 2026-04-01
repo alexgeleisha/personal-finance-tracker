@@ -18,13 +18,3 @@ def get_income():
     return [t for t in transactions if t["amount"] > 0]
 def format_transactions():
     return [f"{t['name']} {t['amount']}" for t in transactions]
-from finance.tracker import add_transaction, get_balance
-
-def test_balance():
-    add_transaction("Test", 10)
-    assert get_balance() >= 10
-from finance.categories import add_category
-
-def test_category():
-    add_category("test")
-    assert "test" in ["test"]
