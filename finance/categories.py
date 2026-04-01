@@ -7,3 +7,5 @@ def add_transaction(name, amount, category=None):
         "amount": amount,
         "category": category
     })
+def list_categories():
+    return categories
