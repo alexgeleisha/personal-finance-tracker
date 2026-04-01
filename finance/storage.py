@@ -9,3 +9,6 @@ def load(filename="data.json"):
     except:
         return []
 save(transactions)
+if __name__ == "__main__":
+    add_transaction("Coffee", -5)
+    print(get_balance())
