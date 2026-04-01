@@ -16,3 +16,5 @@ def get_expenses():
     return [t for t in transactions if t["amount"] < 0]
 def get_income():
     return [t for t in transactions if t["amount"] > 0]
+def format_transactions():
+    return [f"{t['name']} {t['amount']}" for t in transactions]
