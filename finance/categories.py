@@ -1,0 +1,1 @@
+categories = ["food", "salary"]
