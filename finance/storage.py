@@ -14,3 +14,5 @@ if __name__ == "__main__":
     print(get_balance())
 def get_expenses():
     return [t for t in transactions if t["amount"] < 0]
+def get_income():
+    return [t for t in transactions if t["amount"] > 0]
