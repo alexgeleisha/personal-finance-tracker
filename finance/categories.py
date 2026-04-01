@@ -9,3 +9,4 @@ def add_transaction(name, amount, category=None):
     })
 def list_categories():
     return categories
+category = category or "other"
